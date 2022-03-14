@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  line-height: 1.5;
   background-color: var(--main);
   padding: 3rem;
 }
@@ -144,20 +145,27 @@ footer {
   .landing-page-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-column-gap: 5rem;
+  }
+
+  .landing-page-body .landing-body-header {
+    width: 100%;
   }
 
   .landing-page-body .landing-body-header h1 {
+    width: 80%;
+    text-align: left;
     font-size: 3rem;
   }
 
   .landing-page-body .landing-main-text p {
-    font-size: 2.3rem;
+    text-align: left;
+    font-size: 2rem;
   }
 
   .landing-page-body .action {
     display: flex;
-    /* width: 100%; */
+    width: 100%;
   }
 
   .landing-page-body .btn {
