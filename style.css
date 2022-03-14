@@ -1,0 +1,176 @@
+:root {
+  --main: hsl(257, 40%, 49%);
+  --hover-state: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('./images/bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: var(--main);
+  padding: 3rem;
+}
+
+/* button styling */
+.btn {
+  outline: none;
+  border: none;
+  font-weight: 400;
+  padding: 1.5rem 6rem;
+  background-color: white;
+  color: var(--main);
+  border-radius: 100px;
+  transition: background-color 0.5s ease;
+}
+
+.btn,
+.social-icons .icon {
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--hover-state);
+}
+
+.landing-page-logo img {
+  width: 120px;
+}
+
+.landing-page-main {
+  display: flex;
+  color: white;
+  margin-top: 6rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* banner of the landing page  */
+.landing-page-banner {
+  margin-bottom: 6rem;
+}
+
+.landing-page-banner img {
+  width: 100%;
+}
+
+/* main body of the landing page */
+.landing-page-body {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-page-body .landing-body-header h1 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.landing-main-text {
+  font-weight: 400;
+  margin: 3rem 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.landing-main-text p {
+  font-size: 1.7rem;
+}
+
+footer {
+  margin-top: 6rem;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons .icon i {
+  color: inherit;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.social-icons .icon {
+  color: white;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icons .icon:hover {
+  color: var(--hover-state);
+  border-color: var(--hover-state);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    height: 100vh;
+    padding: 6rem;
+    overflow-y: hidden;
+  }
+
+  .landing-page-logo img {
+    width: none;
+    transform: scale(1.5);
+  }
+
+  .btn {
+    align-self: flex-start;
+  }
+
+  .landing-page-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .landing-page-body .landing-body-header h1 {
+    font-size: 3rem;
+  }
+
+  .landing-page-body .landing-main-text p {
+    font-size: 2.3rem;
+  }
+
+  .landing-page-body .action {
+    display: flex;
+    /* width: 100%; */
+  }
+
+  .landing-page-body .btn {
+    font-size: 1.7rem;
+  }
+
+  .social-icons {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}
