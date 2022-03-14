@@ -129,6 +129,7 @@ footer {
     height: 100vh;
     padding: 6rem;
     overflow-y: hidden;
+    background-image: url('./images/bg-desktop.svg');
   }
 
   .landing-page-logo img {
